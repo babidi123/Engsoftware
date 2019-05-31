@@ -104,3 +104,24 @@ public:
         }
     }
 }
+class aval{
+private:
+
+    int nota;
+    instrutor I[10];
+    aluno A;
+public:
+
+    void avaliar(char nome[100],int cpf){
+        if(cpf==A.getcpf()){
+            for(i=0;i<10,i++){
+
+                if(std::string::compare(nome,I[i].getnome())){
+                    std::cin>>nota;
+                }
+            }
+        }
+    }
+}
+
+class gestor{}
