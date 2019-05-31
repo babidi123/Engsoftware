@@ -40,19 +40,24 @@ private:
     float peso;
     float imc;
     float massam;
+    
 
 public:
-void cadastra_aluno(){
+    void cadastra_aluno(){
         std::cin>>cpf;
         std::cin.getline(nome,100);
+
+    }
+
+    int getcpf(){
+        return cpf;
+    }
+    void atualiza_ficha(){
         std::cin>>altura;
         std::cin>>peso;
         std::cin>>imc;
         std::cin>>massam;
-}
-int getcpf(){
-    return cpf;
-}
+    }
 };
 class exercicio{
 private:
