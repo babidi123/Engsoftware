@@ -69,19 +69,38 @@ public:
         std::cin.getline(nome,100);
        
     }
+    int getcodexe(){
+
+        return codexercicio;
+    }
+};
+class fazer_exercicio{
+private:
+int repeticoes;
+int tempo;
+int carga;
+exercicio E[100];
+public:
+void exerc_fazer(){
+
+    E[i].getcodexe();
+    std::cin>>repeticoes;
+    std::cin>>tempo;
+    std::cin>>carga;
+    
+}
 };
 class serie{
 private:
-    int repeticoes;
-    int tempo;
-    int carga;
-    instrutor I;
     aluno A;
-    exercicio E[20];
+    fazer_exercicio F[100];
 public:
     void nova_serie(int cpf_aluno){
         if(cpf_aluno==A.getcpf()){
-        std::cout<<"ainda vamos fazer";
+            i=0;
+            while(1){
+                F[i].exerc_fazer();
+            }
         }
     }
 }
