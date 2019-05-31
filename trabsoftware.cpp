@@ -14,7 +14,20 @@ public:
         std::cin.getline(nome,100);
         std::cin>>senha;
     }
+     void login(matricula,senha){
 
+        if (matricula == matricula and senha == senha){
+            std::cout<<"acesso garantido";
+            return 1;
+        }
+        else{
+            std::cout<<"Matricula ou senha errados";
+            return 0;
+        }
+    }
+    void get_matricula(){
+        return matricula;
+    }
 };
 
 class aluno{
@@ -41,5 +54,29 @@ int getcpf(){
     return cpf;
 }
 };
-
-class 
+class exercicio{
+private:
+    int codexercicio;
+    char nomeexercicio[100];
+public:
+    void cadastra_exercicio(){
+        std::cin>>codexercicio;
+        std::cin.getline(nome,100);
+       
+    }
+};
+class serie{
+private:
+    int repeticoes;
+    int tempo;
+    int carga;
+    instrutor I;
+    aluno A;
+    exercicio E[20];
+public:
+    void nova_serie(int cpf_aluno){
+        if(cpf_aluno==A.getcpf()){
+        std::cout<<"ainda vamos fazer";
+        }
+    }
+}
