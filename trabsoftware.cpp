@@ -82,16 +82,21 @@ private:
 int repeticoes;
 int tempo;
 int carga;
+int codexercicio;
 exercicio E[100];
 public:
 void exerc_fazer(){
+        std::cin>>codexercicio;
+        for(i=0;i<=100,i++)
+        {
+        if(codexercicio==E[i].getcodexe){
+            std::cin>>repeticoes;
+            std::cin>>tempo;
+            std::cin>>carga;  
+            }
+        }
 
-    E[i].getcodexe();
-    std::cin>>repeticoes;
-    std::cin>>tempo;
-    std::cin>>carga;
-    
-}
+    }
 };
 class serie{
 private:
