@@ -113,6 +113,7 @@ private:
     int nota;
     instrutor I[10];
     aluno A;
+    
 public:
 
     void avaliar(char nome[],int cpf){
@@ -149,6 +150,7 @@ private:
     aval AV[100];
     instrutor I[10];
     aluno A[100];
+    gestor G;
 public:
     int fluxo_aluno(){
         std::cout<<"implementaremos ainda";
