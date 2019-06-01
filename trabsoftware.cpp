@@ -11,7 +11,7 @@ private:
 public:
     void cadastra_instrutor(){
         std::cin>>matricula;
-        std::cin.getline(nome,100);
+        std::cin.getline(nome_instrutor,100);
         std::cin>>senha;
     }
      void login(matricula,senha){
@@ -25,8 +25,11 @@ public:
             return 0;
         }
     }
-    void get_matricula(){
+    int get_matricula(){
         return matricula;
+    }
+    char get_nome_instrutor(){
+        return nome_instrutor;
     }
 };
 
@@ -112,16 +115,58 @@ private:
     aluno A;
 public:
 
-    void avaliar(char nome[100],int cpf){
+    void avaliar(char nome[],int cpf){
         if(cpf==A.getcpf()){
-            for(i=0;i<10,i++){
+            for(i=0;i<10;i++){
 
-                if(std::string::compare(nome,I[i].getnome())){
+                if(std::string::compare(nome,I[i].get_nome_instrutor())){
                     std::cin>>nota;
                 }
             }
         }
     }
+    int getnota(){
+        return nota;
+    }
 }
 
-class gestor{}
+class gestor{
+private:
+    int matricula_gestor;
+    char nome_gestor[100];
+    int senha;
+
+public:
+    void cadastra_gestor(){
+        std::cin>>matricula_gestor;
+        std::cin.getline(nome_gestor,100);
+        std::cin>>senha;
+    }
+};
+class gestao{
+
+private:
+    aval AV[100];
+    instrutor I[10];
+    aluno A[100];
+public:
+    int fluxo_aluno(){
+        std::cout<<"implementaremos ainda";
+        return 0;
+    }
+    float media_instrutor(char nome_instrutor[]){
+
+        float soma=0.0;
+        int n=0;
+        for(j=0;j<100;j++){
+            for(k=0;k<10,k++){
+                if(std::string::compare(nome_instrutor=I[k].get_nome_instrutor())){
+                    soma=soma+AV[j].avaliar(nome_instrutor,A[j].getcpf())
+                    n++;
+                }
+            }
+        }
+        return soma/n
+    }
+
+};
