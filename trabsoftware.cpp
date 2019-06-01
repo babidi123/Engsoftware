@@ -94,8 +94,7 @@ void exerc_fazer(){
             std::cin>>tempo;
             std::cin>>carga;  
             }
-        else{
-            i=0
+        else {
             std::cout<<"exercício inexistente"
                 
         }
