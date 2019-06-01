@@ -107,7 +107,7 @@ public:
         }
     }
 }
-class aval{
+class avaliar{
 private:
 
     int nota;
@@ -116,7 +116,7 @@ private:
     
 public:
 
-    void avaliar(char nome[],int cpf){
+    void inserir_avaliacao(char nome[],int cpf){
         if(cpf==A.getcpf()){
             for(i=0;i<10;i++){
 
@@ -147,7 +147,7 @@ public:
 class gestao{
 
 private:
-    aval AV[100];
+    avaliar AV[100];
     instrutor I[10];
     aluno A[100];
     gestor G;
@@ -163,7 +163,7 @@ public:
         for(j=0;j<100;j++){
             for(k=0;k<10,k++){
                 if(std::string::compare(nome_instrutor=I[k].get_nome_instrutor())){
-                    soma=soma+AV[j].avaliar(nome_instrutor,A[j].getcpf())
+                    soma=soma+AV[j].inserir_avaliacao(nome_instrutor,A[j].getcpf())
                     n++;
                 }
             }
